@@ -81,7 +81,14 @@ a:hover {
     width: 30px;
     cursor: pointer;
     z-index: 1;
+
 }
+
+hamburger-icon:hover{
+    color: rgb(30, 58, 138);
+}
+
+
 
 .hamburger-icon span {
     width: 100%;
