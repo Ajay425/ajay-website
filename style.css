@@ -81,14 +81,11 @@ a:hover {
     width: 30px;
     cursor: pointer;
     z-index: 1;
-
 }
 
-.hamburger-icon:hover{
+.hamburger-icon:hover {
     color: rgb(30, 58, 138);
 }
-
-
 
 .hamburger-icon span {
     width: 100%;
@@ -139,21 +136,13 @@ a:hover {
     transform: rotate(-45deg) translate(10px, -5px);
 }
 
-.hamburger-icon span:first-child{
+.hamburger-icon span {
     transform: none;
-}
-
-.hamburger-icon span:first-child{
     opacity: 1;
-    
-}
-
-.hamburger-icon span:first-child{
-    transform: none;
 }
 
 /* SECTIONS */
-section{
+section {
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
@@ -161,66 +150,81 @@ section{
     min-height: fit-content;
 }
 
-.section-container{
+.section-container {
     display: flex;
 }
-/* PROFILE SECTION */
 
-#profile{
+/* PROFILE SECTION */
+#profile {
     display: flex;
     justify-content: center;
     gap: 5rem;
     height: 80vh;
-
 }
-.section__pic-container{
+
+.section__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
-    margin: auto  0;
-
+    margin: auto 0;
 }
-.section__text{
+
+.section__text {
     align-self: center;
     text-align: center;
-
 }
 
-.section__text p{
+.section__text p {
     font-weight: 600;
-    
 }
 
-.section__text p1{
+.section__text__p1 {
     text-align: center;
-}
-
-.section__text p1{
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
 
-.tittle{
+.title {
     font-size: 3rem;
     text-align: center;
 }
 
-.socials-container{
+#socials-container {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
-
 }
 
-.icon{
+.icon {
     cursor: pointer;
     height: 2rem;
+} 
+
+.icon:hover{
+    transform: scale(1.2);
+    color: rgb(30, 58, 138);
 }
 
+/* TYPING EFFECT */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
 
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
 
-
+#typing-text {
+    overflow: hidden;
+    border-right: .15em solid black; /* The caret */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.02em;
+    animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
