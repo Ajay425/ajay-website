@@ -201,10 +201,12 @@ section {
     height: 2rem;
 } 
 
-.icon:hover{
+.icon:hover {
     transform: scale(1.2);
-    color: rgb(30, 58, 138);
+    filter: hue-rotate(180deg);
+    color: rgb(255, 0, 0); /* Example color change on hover */
 }
+
 
 /* TYPING EFFECT */
 @keyframes typing {
@@ -224,6 +226,74 @@ section {
     margin: 0 auto;
     letter-spacing: 0.02em;
     animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+/* ABOUT SECTION */
+
+#about{
+    position: relative;
+}
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content:center ;
+    flex-direction: column;
+
+}
+
+.about-containers, .about-details-container{
+    display: flex;
+}
+
+.about-pic{
+    border-radius: 2rem;
+}
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* ARROW ANIMATION */
+@keyframes arrow-bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.arrow {
+    animation: arrow-bounce 2s infinite;
 }
 
 /* MEDIA QUERIES */
