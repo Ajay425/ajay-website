@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #FFFDD0; /* Secondary Color */
 }
 
 html {
@@ -15,7 +16,7 @@ html {
 }
 
 p {
-    color: rgb(85, 85, 85);
+    color: #2F2F2F; /* Text Color */
 }
 
 /* TRANSITION */
@@ -32,6 +33,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 17vh;
+    /* Primary Color */
 }
 
 .nav-links {
@@ -41,26 +43,27 @@ nav {
 }
 
 a {
-    color: black;
+    color: #2F2F2F; /* Text Color */
     text-decoration: none;
-    text-decoration-color: white;
+    text-decoration-color: #800020; /* Primary Color */
 }
 
 a:hover {
-    color: rgb(30, 58, 138);
+    color: #FFD700; /* Accent Color */
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: rgb(30, 58, 138);
+    text-decoration-color: #FFD700; /* Accent Color */
 }
 
 .logo {
     font-size: 2rem;
+    color: #2F2F2F; /* Text Color */
 }
 
 .logo:hover {
     cursor: default;
     transform: scale(1.1);
-    color: rgb(30, 58, 138);
+    color: #FFD700; /* Accent Color */
 }
 
 /* HAMBURGER NAV */
@@ -84,13 +87,13 @@ a:hover {
 }
 
 .hamburger-icon:hover {
-    color: rgb(30, 58, 138);
+    color: #FFD700; /* Accent Color */
 }
 
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: #2F2F2F; /* Text Color */
     transition: all 0.3s ease-in-out;
 }
 
@@ -98,7 +101,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: #800020; /* Primary Color */
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -110,7 +113,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: #2F2F2F; /* Text Color */
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
@@ -167,6 +170,8 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+    animation: fadeInUp 1s ease-in-out;
+    
 }
 
 .section__text {
@@ -176,17 +181,20 @@ section {
 
 .section__text p {
     font-weight: 600;
+    color: #2F2F2F; /* Text Color */
 }
 
 .section__text__p1 {
     text-align: center;
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    color: #2F2F2F; /* Text Color */
 }
 
 .title {
     font-size: 3rem;
     text-align: center;
+    color: #2F2F2F; /* Text Color */
 }
 
 #socials-container {
@@ -199,12 +207,13 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    animation: fadeInUp 1s ease-in-out;
 } 
 
 .icon:hover {
     transform: scale(1.2);
     filter: hue-rotate(180deg);
-    color: rgb(255, 0, 0); /* Example color change on hover */
+    color: #FFD700; /* Accent Color */
 }
 
 
@@ -216,12 +225,12 @@ section {
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: black; }
+    50% { border-color: #2F2F2F; /* Text Color */ }
 }
 
 #typing-text {
     overflow: hidden;
-    border-right: .15em solid black; /* The caret */
+    border-right: .15em solid #2F2F2F; /* Text Color */
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: 0.02em;
@@ -230,50 +239,54 @@ section {
 
 /* ABOUT SECTION */
 
-#about{
+#about {
     position: relative;
 }
-.about-containers{
+
+.about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
-.about-details-container{
-    justify-content:center ;
+.about-details-container {
+    justify-content: center;
     flex-direction: column;
-
 }
 
-.about-containers, .about-details-container{
+.about-containers, .about-details-container {
     display: flex;
 }
 
-.about-pic{
+.about-pic {
     border-radius: 2rem;
+    animation: fadeInUp 1s ease-in-out;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
 }
 
-.details-container{
+.details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background: #800020; /* Primary Color */
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
+    border: #353535 0.1rem solid;
+    border-color: #A3A3A3; /* Adjusted border color to match */
     text-align: center;
+    color: #2F2F2F; /* Text Color */
 }
-.section-container{
+
+.section-container {
     gap: 4rem;
     height: 80%;
 }
 
-.section__pic-container{
+
+.section__pic-container {
     height: 400px;
     width: 400px;
     margin: auto 0;
@@ -294,6 +307,28 @@ section {
 
 .arrow {
     animation: arrow-bounce 2s infinite;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 /* MEDIA QUERIES */
