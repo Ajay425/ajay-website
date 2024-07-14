@@ -209,12 +209,13 @@ section {
     cursor: pointer;
     height: 2rem;
     animation: fadeInUp 1s ease-in-out;
+    transition: transform 0.3s ease, color 0.3s ease;
 } 
 
 .icon:hover {
     transform: scale(1.2);
     filter: hue-rotate(180deg);
-    color: #FFD700; /* Accent Color */
+    color:#4392f1;
 }
 
 
