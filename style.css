@@ -49,21 +49,22 @@ a {
 }
 
 a:hover {
-    color: #FFD700; /* Accent Color */
+    color:#4392f1; /* Accent Color */
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: #FFD700; /* Accent Color */
+    text-decoration-color: #4392f1; /* Accent Color */
 }
 
 .logo {
     font-size: 2rem;
     color: #2F2F2F; /* Text Color */
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .logo:hover {
     cursor: default;
     transform: scale(1.1);
-    color: #FFD700; /* Accent Color */
+    color: #4392f1; /* Accent Color */
 }
 
 /* HAMBURGER NAV */
