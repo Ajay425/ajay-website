@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FFFDD0; /* Secondary Color */
+    background-color: #42b883; /* Secondary Color */
 }
 
 html {
@@ -43,16 +43,16 @@ nav {
 }
 
 a {
-    color: #2F2F2F; /* Text Color */
+    color: #ffffff; /* Text Color */
     text-decoration: none;
     text-decoration-color: #800020; /* Primary Color */
 }
 
 a:hover {
-    color:#4392f1; /* Accent Color */
+    color:#ff7e67; /* Accent Color */
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: #4392f1; /* Accent Color */
+    text-decoration-color: #ff7e67; /* Accent Color */
 }
 
 .logo {
@@ -195,7 +195,7 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
-    color: #2F2F2F; /* Text Color */
+    color: #ffffff; /* Text Color */
 }
 
 #socials-container {
