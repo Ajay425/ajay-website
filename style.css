@@ -221,6 +221,22 @@ section {
     color: #4392F1; /* Accent Color */
 }
 
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.section__text, .section__pic-container, .nav-links, .logo, .hamburger-menu {
+    position: relative;
+    z-index: 1; /* Ensure other elements are above particles */
+}
+
+
 
 /* BUTTONS */
 
