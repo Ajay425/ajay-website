@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(17, 122, 221); /* Secondary Color */
+    background-color: black; /* Secondary Color */
 }
 
 html {
@@ -113,7 +113,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: #2F2F2F; /* Text Color */
+    color: white; /* Text Color */
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
@@ -168,6 +168,15 @@ section {
 }
 
 .section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    
+    margin: auto 0;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.profile-pic-1 {
     display: flex;
     height: 400px;
     width: 400px;
@@ -302,8 +311,8 @@ section {
 }
 
 #typing-text {
-    overflow: hidden;
-    border-right: .15em solid #2F2F2F; /* Text Color */
+    display: inline;
+    border-right: .10em solid #2F2F2F; /* Text Color */
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: 0.02em;
