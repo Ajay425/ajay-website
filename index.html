@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquery.css">
+    <link rel="stylesheet" href="">
+
 </head>
 <body>
     <nav id="desktop-nav">
@@ -42,16 +44,16 @@
         <script src="app.js"></script>
         <div class="section__pic-container">
             <div class="profile-pic-1">
-            <img src="./assets/profile-pic.png" alt="Ajay Bukkaraya Picture">
+            <img src="./assets/Untitled design (2).png" alt="Ajay Bukkaraya Picture">
             </div>
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title"><span id="typing-text">Ajay Bukkaraya</span></h1>
             <p class="section__text__p2">Full Stack Engineer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Ajay_resume.pdf')">Download Resume</button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            <div class="btn-container flex justify-center gap-4">
+                <button class="btn btn-color-1 relative inline-flex items-center justify-center p-4 text-lg font-semibold text-gray-300 transition duration-300 ease-in-out transform bg-transparent border-2 border-gray-600 rounded-full hover:bg-gray-600 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gray-400 active:scale-95 animate-pulse" onclick="window.open('./assets/Ajay_resume.pdf')">Download Resume</button>
+                <button class="btn btn-color-2 relative inline-flex items-center justify-center p-4 text-lg font-semibold text-gray-300 transition duration-300 ease-in-out transform bg-transparent border-2 border-gray-600 rounded-full hover:bg-gray-600 hover:text-gold-500 focus:outline-none focus:ring-2 focus:ring-gray-400 active:scale-95 animate-pulse" onclick="location.href='#contact'">Contact Info</button>
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ajay-bukkaraya/'">
