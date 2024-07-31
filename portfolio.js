@@ -5,6 +5,17 @@ function toggleMenu() {
     icon.classList.toggle("open");
 }
 
+function handleVisibilityChange() {
+    if (document.hidden) {
+        // User has switched away from the page
+        document.body.style.opacity = '0';
+    } else {
+        // User has returned to the page
+        document.body.style.opacity = '1';
+    }
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const textElement = document.getElementById('typing-text');
     const text = textElement.textContent;
@@ -20,4 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     type();
+
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 });
+
