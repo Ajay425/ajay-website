@@ -569,6 +569,31 @@ footer p{
     }
 }
 
+/* SCROLL BAR STYLE */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1E1E1E; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4392F1; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF7E67; 
+}
+
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #4392F1 #1E1E1E; 
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
     #desktop-nav {
