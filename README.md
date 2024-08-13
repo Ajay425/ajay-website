@@ -1,2 +1,32 @@
-# ajay-website
- 
+# Personal Portfolio Website
+
+This repository contains the source code for my personal portfolio website, showcasing my skills, projects, and professional experience.
+
+## Features
+
+- Responsive design
+- Project Section
+- Skills Section
+- Contact Me
+- Resume 
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Particles.js
+- Tailwind.css
+
+## Deployment
+
+This website is deployed using Netlify. You can view the live site at ajaybukkaraya.com
+
+## Contributing
+
+This is a personal project and is not open for contributions.
+
+
+## Contact
+
+Ajay Bukkaraya - ajaybn2@gmail.com
