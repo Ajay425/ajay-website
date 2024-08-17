@@ -2,14 +2,6 @@
 
 This repository contains the source code for my personal portfolio website, showcasing my skills, projects, and professional experience.
 
-## Features
-
-- Responsive design
-- Project Section
-- Skills Section
-- Contact Me
-- Resume 
-
 ## Technologies Used
 
 - HTML5
