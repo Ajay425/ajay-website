@@ -4,8 +4,8 @@ This repository contains the source code for my personal portfolio website, show
 
 ## Technologies Used
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - Particles.js
 - Tailwind.css
