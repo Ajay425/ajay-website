@@ -7,7 +7,6 @@ This repository contains the source code for my personal portfolio website, show
 - HTML
 - CSS
 - JavaScript
-- Particles.js
 - Tailwind.css
 
 ## Deployment
